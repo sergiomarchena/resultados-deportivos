@@ -28,3 +28,8 @@ Tambien podriamos añadir si resulta muy sencillo podriamos poner una consulta d
 la pagina web:
 
 http://www.resultados-futbol.com/api/documentacion#req_tables
+
+
+-primero la aplicacion dara un listados de liga a elegir. seleccionaremos la liga que queremos consultar
+
+-segundo dentro de esa liga nos mostrara los resultados y la clasificacion 
