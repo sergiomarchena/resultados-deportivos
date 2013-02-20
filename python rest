@@ -1,0 +1,11 @@
+consulta python rest:
+
+? a partir de aqui son los parametros
+
+r= requests.get = r = requests.get ("http://www.resultados-futbol.com/scripts/api/api.php", params = {"key":"2b42a02ecec6a92d100a0b1b5e3a6e4d", "format":"xml", "req":"leagues", "country":"es"})
+}))
+
+r.status_code si devuelve 200 esta bien hecha
+
+r.text para ver la respuesta
+
