@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ligas de futbol</title>
+</head>
+
+<p align="center"><b>Selecciona un tipo de liga para mostrar sus datos:
+<script LANGUAGE="JavaScript">
+
+
+<!-- Begin
+var spainArray = new Array("('Selecciona una liga','',true,true)",
+"('bbva')",
+"('adelante')",
+"('2ºB')",
+"('3ª')");
+
+var englandArray = new Array("('Selecciona una liga','',true,true)",
+"('premier')",
+"('championship')",
+"('league one')",
+"('conference national')");
+
+var italyArray = new Array("('Selecciona una liga','',true,true)",
+"('serie A')",
+"('serie B')",
+"('lega pro 1')",
+"('lega pro 2')");
+
+
+function cochemarca(inForm,selected) {
+var selectedArray = eval(selected + "Array");
+while (selectedArray.length < inForm.country.options.length) {
+inForm.country.options[(inForm.country.options.length - 1)] = null;
+}
+for (var i=0; i < selectedArray.length; i++) {
+eval("inForm.country.options[i]=" + "new Option" + selectedArray[i]);
+}
+if (inForm.region.options[0].value == '') {
+inForm.region.options[0]= null;
+if ( navigator.appName == 'Netscape') {
+if (parseInt(navigator.appVersion) < 4) {
+window.history.go(0);
+}
+else {
+if (navigator.platform == 'Win32' || navigator.platform == 'Win16') {
+window.history.go(0);
+}
+}
+}
+}
+}
+function populateUSstate(inForm,selected) {
+
+if (selected == 'USA') {
+for (var i=0; i < stateArray.length; i++) {
+eval("inForm.country.options[i]=" + "new Option" + stateArray[i]);
+}
+if ( navigator.appName == 'Netscape') {
+if (parseInt(navigator.appVersion) < 4) {
+window.history.go(0)
+}
+else {
+if (navigator.platform == 'Win32' || navigator.platform == 'Win16') {
+window.history.go(0)
+}
+}
+}
+}
+else {
+}
+if (selected == 'Other') {
+newCountry = "";
+while (newCountry == ""){
+newCountry=prompt ("Please enter the name of your country.", "");
+}
+if (newCountry != null) {
+inForm.country.options[(inForm.country.options.length-1)]=new Option(newCountry,newCountry,true,true);
+inForm.country.options[inForm.country.options.length]=new Option('Other, not listed','Other');
+}
+}
+if(inForm.country.options[0].text == 'Select country') {
+inForm.country.options[0]= null;
+}
+}
+// End -->
+</script>
+</head>
+
+<!-- STEP TWO: Add the last coding to the BODY of your HTML document -->
+</b>
+<body>
+
+</p>
+
+<center>
+<form name="globe">
+<p>
+<select name="region" onChange="cochemarca(document.globe,document. globe.region.options[document.globe.region.selectedIndex].value)">
+<option selected>Selecciona una liga</option>
+<option value="spain">espanola</option>
+<option value="england">inglesa</option>
+<option value="italy">italiana</option>
+</select>
+<select name="country" onChange="populateUSstate(document.globe,document. globe.country.options[document.globe.country.selectedIndex].text)">
+<option value>&lt;--------------------</option>
+</select> </p>
+<form method="post" action="agente.php">
+<input type="submit" value="Consultar" />
+</center>
+<p></p>
+<center>
+<p>&nbsp;</p>
+</center>
+<p></p>
+
+</body>
+
+</html> 
