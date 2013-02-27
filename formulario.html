@@ -10,23 +10,46 @@
 
 
 <!-- Begin
-var spainArray = new Array("('Selecciona una liga','',true,true)",
+var esArray = new Array("('Selecciona una liga','',true,true)",
 "('bbva')",
 "('adelante')",
 "('2ºB')",
 "('3ª')");
 
-var englandArray = new Array("('Selecciona una liga','',true,true)",
+var gbArray = new Array("('Selecciona una liga','',true,true)",
 "('premier')",
 "('championship')",
 "('league one')",
 "('conference national')");
 
-var italyArray = new Array("('Selecciona una liga','',true,true)",
+var itArray = new Array("('Selecciona una liga','',true,true)",
 "('serie A')",
 "('serie B')",
 "('lega pro 1')",
 "('lega pro 2')");
+
+var frArray = new Array("('Selecciona una liga','',true,true)",
+"('ligue 1')",
+"('ligue 2')",
+"('national')");
+
+var deArray = new Array("('Selecciona una liga','',true,true)",
+"('bundesliga')",
+"('2 liga')",
+"('3 liga')",
+"('regionalliga')");
+
+var nlArray = new Array("('Selecciona una liga','',true,true)",
+"('liga holandesa')",
+"('eerste divisie')",
+"('topklasse')",
+"('hoofdklasse zondag')");
+
+var ptArray = new Array("('Selecciona una liga','',true,true)",
+"('liga portuguesa')",
+"('liga de honra')",
+"('2 divisao portugal')",
+"('3 divisao portugal')");
 
 
 function cochemarca(inForm,selected) {
@@ -99,9 +122,13 @@ inForm.country.options[0]= null;
 <p>
 <select name="region" onChange="cochemarca(document.globe,document. globe.region.options[document.globe.region.selectedIndex].value)">
 <option selected>Selecciona una liga</option>
-<option value="spain">espanola</option>
-<option value="england">inglesa</option>
-<option value="italy">italiana</option>
+<option value="es">espanola</option>
+<option value="gb">inglesa</option>
+<option value="it">italiana</option>
+<option value="fr">francesa</option>
+<option value="de">alemana</option>
+<option value="nl">holandesa</option>
+<option value="pt">portuguesa</option>
 </select>
 <select name="country" onChange="populateUSstate(document.globe,document. globe.country.options[document.globe.country.selectedIndex].text)">
 <option value>&lt;--------------------</option>
