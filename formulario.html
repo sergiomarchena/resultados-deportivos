@@ -10,46 +10,107 @@
 
 
 <!-- Begin
-var esArray = new Array("('Selecciona una liga','',true,true)",
-"('bbva')",
-"('adelante')",
-"('2ºB')",
-"('3ª')");
+var 1Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
 
-var gbArray = new Array("('Selecciona una liga','',true,true)",
-"('premier')",
-"('championship')",
-"('league one')",
-"('conference national')");
+var 2Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
 
-var itArray = new Array("('Selecciona una liga','',true,true)",
-"('serie A')",
-"('serie B')",
-"('lega pro 1')",
-"('lega pro 2')");
+var 3Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
 
-var frArray = new Array("('Selecciona una liga','',true,true)",
-"('ligue 1')",
-"('ligue 2')",
-"('national')");
+var 10Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
 
-var deArray = new Array("('Selecciona una liga','',true,true)",
-"('bundesliga')",
-"('2 liga')",
-"('3 liga')",
-"('regionalliga')");
+var 25Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
 
-var nlArray = new Array("('Selecciona una liga','',true,true)",
-"('liga holandesa')",
-"('eerste divisie')",
-"('topklasse')",
-"('hoofdklasse zondag')");
+var 87Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
 
-var ptArray = new Array("('Selecciona una liga','',true,true)",
-"('liga portuguesa')",
-"('liga de honra')",
-"('2 divisao portugal')",
-"('3 divisao portugal')");
+var 102Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 7Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 89Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 90Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 91Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 16Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 92Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 103Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 8Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 93Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 94Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+var 178Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 9Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 104Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 225Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+var 226Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 19Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 96Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 223Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
+
+var 224Array = new Array("('Selecciona una liga','',true,true)",
+"('clasificacion')",
+"('resultados')");
 
 
 function cochemarca(inForm,selected) {
@@ -122,13 +183,32 @@ inForm.country.options[0]= null;
 <p>
 <select name="region" onChange="cochemarca(document.globe,document. globe.region.options[document.globe.region.selectedIndex].value)">
 <option selected>Selecciona una liga</option>
-<option value="es">espanola</option>
-<option value="gb">inglesa</option>
-<option value="it">italiana</option>
-<option value="fr">francesa</option>
-<option value="de">alemana</option>
-<option value="nl">holandesa</option>
-<option value="pt">portuguesa</option>
+<option value="1">bbva</option>
+<option value="2">liga adelante</option>
+<option value="3">2ºB</option>
+<option value="10">premier</option>
+<option value="25">championship</option>
+<option value="87">league one</option>
+<option value="102">conference national</option>
+<option value="7">serie A</option>
+<option value="89">serie B</option>
+<option value="90">lega pro 1</option>
+<option value="91">lega pro 2</option>
+<option value="16">ligue 1</option>
+<option value="92">ligue 2</option>
+<option value="103">national</option>
+<option value="8">bundesliga</option>
+<option value="93">2 liga</option>
+<option value="94">3 liga</option>
+<option value="178">regionalliga</option>
+<option value="9">liga holandesa</option>
+<option value="104">eerste divisie</option>
+<option value="225">topklasse</option>
+<option value="226">hoofdklasse zondag</option>
+<option value="19">liga portuguesa</option>
+<option value="96">liga de honra</option>
+<option value="223">2 divisao portugal</option>
+<option value="224">3 divisao portugal</option>
 </select>
 <select name="country" onChange="populateUSstate(document.globe,document. globe.country.options[document.globe.country.selectedIndex].text)">
 <option value>&lt;--------------------</option>
