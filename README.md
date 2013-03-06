@@ -30,6 +30,7 @@ la pagina web:
 http://www.resultados-futbol.com/api/documentacion#req_tables
 
 
--primero la aplicacion dara un listados de liga a elegir. seleccionaremos la liga que queremos consultar
+-primero la aplicacion dara un listados de liga a elegir dentro de esa liga nos dara dos opciones.
 
--segundo dentro de esa liga nos mostrara los resultados y la clasificacion 
+
+-segundo dentro de esa liga nos mostrara los resultados o la clasificacion 
