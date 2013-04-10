@@ -19,7 +19,7 @@ golescontra = xml.xpath("/tables/table/ga/text()")
 promedio =  xml.xpath("/tables/table/avg/text()")
 marca =  xml.xpath("/tables/table/mark/text()")
 
-
+#construccion html final
 pag = etree.Element("html")
 
 doc = etree.ElementTree(pag)
