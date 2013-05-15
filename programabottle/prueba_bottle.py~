@@ -74,14 +74,14 @@ def respuesta():
     
     return bottle.template('respuestaresul',
                            ronda=ronda,
-                           local=local,
-                           visitor=visitor,
-                           date_partido=date_partido,
-                           hour=hour,
-                           minute=minute,
-                           local_goals=local_goals,
-                           visitor_goals=visitor_goals,
-                           result=result,
+                           # local=local,
+                           # visitor=visitor,
+                           # date_partido=date_partido,
+                           # hour=hour,
+                           # minute=minute,
+                           # local_goals=local_goals,
+                           # visitor_goals=visitor_goals,
+                           # result=result,
                            )
 bottle.run(host="localhost", port=8080)
 

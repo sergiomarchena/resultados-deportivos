@@ -72,6 +72,5 @@
 </tr>
 %end
 </table>
-<a href="/clasificacion">Volver a elegir liga</a></p>
-<p> <a href="/">Volver al indice</a></p><p> 
+<p> <a href="/">Volver al indice</a></p><p> <a href="/clasificacion">Volver a elegir liga</a></p>
 </body>
