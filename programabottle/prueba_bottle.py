@@ -17,7 +17,8 @@ def respuesta():
     respuesta = requests.get("http://www.resultados-futbol.com/scripts/api/api.php", 
                 params = {"key":"2b42a02ecec6a92d100a0b1b5e3a6e4d", "format":"json", 
                           "req":"tables", "league":clasificacion}) 
-    respuestas = respuesta.text
+    numpartidos=len((json.loads(respuesta.text)["table"]))
+    numero=int(numpartidos)
     equipos = []
     puntos = []
     pganados = []
@@ -27,7 +28,7 @@ def respuesta():
     golescontra = []
     promedio = []
 
-    for i in xrange(20):
+    for i in xrange(numero):
         equipos.append(json.loads(respuesta.text)["table"][i]["team"])
         puntos.append(json.loads(respuesta.text)["table"][i]["points"])
         pganados.append(json.loads(respuesta.text)["table"][i]["wins"])
@@ -61,7 +62,9 @@ def respuesta():
     local_goals = []
     visitor_goals = []
     result = []
-    for i in xrange(10):
+    numpartidos=len((json.loads(resultados.text)["match"]))
+    numero=int(numpartidos)
+    for i in xrange(numero):
         ronda.append(json.loads(resultados.text)["match"][i]["round"])
         local.append(json.loads(resultados.text)["match"][i]["local"])
         visitor.append(json.loads(resultados.text)["match"][i]["visitor"])
