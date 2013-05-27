@@ -1,12 +1,18 @@
 import bottle
 import requests
 import json
+#estilos
+@bottle.route('/css/:filename#.*#')
+def send_static(filename):
+    return bottle.static_file(filename, root='./css')
+
+#pagina principal
 @bottle.route('/')
 def home_page():
     return bottle.template("index2")
 
 
-
+#eleccion de clasificacion y liga a escojer
 @bottle.route('/clasificacion')
 def home_page():
     return bottle.template('clasificacion')
@@ -32,7 +38,7 @@ def respuesta():
         equipos[i].append(json.loads(respuesta.text)["table"][i]["avg"])
                 
     return bottle.template('respuesta',equipos=equipos)
-
+#eleccion de rsultados y eleccion de liga
 @bottle.route('/resultado')
 def home_page():
     return bottle.template("resultado")
