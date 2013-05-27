@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+
+* { margin: 0; 
+	padding: 0; }
+
+
+body {
+	font-size: 13px;
+	line-height: 50px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#000000;
+}
+
+#centrar {
+	width:760px;
+	margin:0 auto;
+	margin-top:30px;
+}
+
+#cabezera h1 {
+	font-size:17px;
+	padding-top:20px;
+	color:#ffffff;
+	text-align:center;
+	background-color:#0000ff;
+	border: 1px solid #ccc;
+	border-bottom:0;
+}
+
+
+#texto {
+	background:#FFFFFF;
+	min-height:290px;
+	position:relative;
+	padding: 20px 0;
+
+}
+
+#texto div {
+	padding: 10px;
+	background-color:#ffff00;
+	border: 1px solid #ccc;
+	border-bottom:0;
+}
