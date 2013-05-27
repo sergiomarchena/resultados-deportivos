@@ -22,55 +22,14 @@
 <td>
 {{i}}
 </td>
-
 %for i in puntos:
 <td>
 {{i}}
-%end
 </td>
-<td>
-%for i in pganados:
-{{i}}
 %end
-</td>
-
-<td>
-%for i in pempate:
-{{i}}
-%end
-</td>
-
-
-<td>
-%for i in pperdidos:
-{{i}}
-%end
-</td>
-
-
-<td>
-%for i in golesfavor:
-{{i}}
-%end
-</td>
-
-
-<td>
-%for i in golescontra:
-{{i}}
-%end
-</td>
-
-
-<td>
-%for i in promedio:
-{{i}}
-%end
-</td>
-
-
 </tr>
 %end
 </table>
-<p> <a href="/">Volver al indice</a></p><p> <a href="/clasificacion">Volver a elegir liga</a></p>
+<a href="/clasificacion">Volver a elegir liga</a></p>
+<p> <a href="/">Volver al indice</a></p><p> 
 </body>

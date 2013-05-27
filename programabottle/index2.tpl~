@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1> Escoje alguna de las opciones</h1>
-    <h3> Clasificacion <a href="index"> Pulsa Aqui </a> </h3>
-    <h3> resultados <a href="librosmasvisto"> Pulsa Aqui </a> </h3>
+    <h3> Clasificacion <a href="clasificacion"> Pulsa Aqui </a> </h3>
+    <h3> resultados <a href="resultado"> Pulsa Aqui </a> </h3>
   </body>
 </html>

@@ -12,63 +12,18 @@
 <td><strong>ganados</strong></td>
 <td><strong>empates</strong></td>
 <td><strong>perdidos</strong></td>
-<td><strong>gf</strong></td>
-<td><strong>ga</strong></td>
+<td><strong>gfavor</strong></td>
+<td><strong>gcontra</strong></td>
 <td><strong>avg</strong></td>
 </tr>
 
-<tr>
 %for i in equipos:
+<tr>
+%for e in i:
 <td>
-{{i}}
+{{e}}
 </td>
-
-%for i in puntos:
-<td>
-{{i}}
 %end
-</td>
-<td>
-%for i in pganados:
-{{i}}
-%end
-</td>
-
-<td>
-%for i in pempate:
-{{i}}
-%end
-</td>
-
-
-<td>
-%for i in pperdidos:
-{{i}}
-%end
-</td>
-
-
-<td>
-%for i in golesfavor:
-{{i}}
-%end
-</td>
-
-
-<td>
-%for i in golescontra:
-{{i}}
-%end
-</td>
-
-
-<td>
-%for i in promedio:
-{{i}}
-%end
-</td>
-
-
 </tr>
 %end
 </table>

@@ -10,62 +10,22 @@
 <tr>
 <td><strong>ronda</strong></td>
 <td><strong>local</strong></td>
-<td><strong>visitor</strong></td>
-<td><strong>date</strong></td>
-<td><strong>hour</strong></td>
-<td><strong>minute</strong></td>
-<td><strong>local_goals</strong></td>
-<td><strong>visitor_goals</strong></td>
-<td><strong>result</strong></td>
+<td><strong>visitante</strong></td>
+<td><strong>fecha partido</strong></td>
+<td><strong>hora</strong></td>
+<td><strong>minuto</strong></td>
+<td><strong>resultado</strong></td>
 </tr>
 
+%for i in rondas:
 <tr>
+%for e in i:
 <td>
-%for i in ronda:
-{{i}}
-%end
+{{e}}
 </td>
-<td>
-%for i in local:
-{{i}}
 %end
-</td>
-<td>
-%for i in visitor:
-{{i}}
-%end
-</td>
-<td>
-%for i in date_partido:
-{{i}}
-%end
-</td>
-<td>
-%for i in hour:
-{{i}}
-%end
-</td>
-<td>
-%for i in minute:
-{{i}}
-%end
-</td>
-<td>
-%for i in local_goals:
-{{i}}
-%end
-</td>
-<td>
-%for i in visitor_goals:
-{{i}}
-%end
-</td>
-<td>
-%for i in result:
-{{i}}
-%end
-</td>
 </tr>
+%end
 </table>
 <a href="/resultado">Volver a elegir liga</a></p>
 <p> <a href="/">Volver al indice</a></p><p> 
