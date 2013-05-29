@@ -47,7 +47,8 @@ def home_page():
 @bottle.route('/respuestaresul', method='POST')
 def respuesta():
     resultado = bottle.request.forms.get("resultado")
-    resultados= requests.get("http://www.resultados-futbol.com/scripts/api/api.php", params = {"key":"2b42a02ecec6a92d100a0b1b5e3a6e4d", "format":"json", "req":"matchs", "league":resultado})
+    num_liga = bottle.request.forms.get("num_liga")
+    resultados= requests.get("http://www.resultados-futbol.com/scripts/api/api.php", params = {"key":"2b42a02ecec6a92d100a0b1b5e3a6e4d", "format":"json", "req":"matchs", "league":resultado,"round":num_liga, "group":"1"})
     rondas = []
     numpartidos=len((json.loads(resultados.text)["match"]))
     numero=int(numpartidos)
@@ -63,5 +64,4 @@ def respuesta():
        
     return bottle.template('respuestaresul',rondas=rondas)
 bottle.run(host="localhost", port=8080)
-
 
