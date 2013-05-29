@@ -1,13 +1,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <title>clasificacion</title>
+    <title>Clasificación</title>
     <link rel="stylesheet" type="text/css" href="/css/respuestaclas.css" />
   </head>
   <body>
     <div id="centrar">
 
       <div id="cabecera">
-	<h1>clasificacion primera division</h1>
+	<h1>Ligas de Fútbol</h1>
 	<ul id="menu">
 	  <li><a href="/" title="Indice" class="active">Indice</a></li>
 	  <li><a href="clasificacion" title="ID">Elegir liga</a></li>
