@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title> ligas de futbol </title>
+    <title> Resultados </title>
     <link href="css/resultado.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div id="centrar">
       <div id="cabezera">
-	<h1> ligas de futbol </h1>
+	<h1> Ligas de Fútbol </h1>
       </div>
       <div id="texto">
        <form action="/respuestaresul" method="POST"> 	
@@ -43,7 +43,7 @@
 	  <option value="224">4º Portuguesa</option>
 	</select>
 	  <form action="/respuestaresul" method="POST">  
-	    <br/><p>Indica una Jornada con un numero si lo dejas en blanco mostrara los resultados mas recientes o los próximos encuentros que se disputan</p>
+	    <br/><p>Indica una Jornada con un número, si lo dejas en blanco mostrara los resultados mas recientes o los próximos encuentros que se disputan</p>
 	    <input type="number" name="num_liga" value=""/>
 	    <br/>
 	    <br>
