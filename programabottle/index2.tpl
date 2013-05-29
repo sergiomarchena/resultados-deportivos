@@ -13,8 +13,8 @@
 	<img src="css/api.png" alt="image" title="image" />	     
 	 <div id="texto">
 	<p>En esta página web podras encontrar los resultados de las ligas, también encontraras sus respectivas clasificaciones</p>	  
-	<a href="clasificacion"a>clasificacion</a>
-	<a href="resultado"> resultados </a>
+	<a href="clasificacion"a><img src="css/clasificacion.png" alt="image" title="image" /></a>
+	<a href="resultado"><img src="css/resultados.png" alt="image" title="image" /></a>
 	</div>
       </div>
   </body>
