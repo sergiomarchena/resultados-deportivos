@@ -2,17 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title> ligas de futbol </title>
+    <title> Clasificación </title>
     <link href="css/clasificacion.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div id="centrar">
       <div id="cabezera">
-	<h1> ligas de futbol </h1>
+	<h1> Ligas de Fútbol </h1>
       </div>
       <div id="texto">
  	<img src="css/indice.png" alt="image" title="image" />	
-	<p>Elige la liga de la que quieras obtener la clasificacion</p>
+	<p>Elige la liga de la que quieras obtener la clasificación</p>
 	<form action="/respuesta" method="POST"> 	  
 	<select name="clasificacion">
 	  <option value="1">bbva</option>
