@@ -42,9 +42,15 @@
 	  <option value="223">3º Portuguesa</option>
 	  <option value="224">4º Portuguesa</option>
 	</select>
-	<input type='submit' value='Enviar'>
-	</form> 		
+	  <form action="/respuestaresul" method="POST">  
+	    <br/><p>Indica una Jornada con un numero si lo dejas en blanco mostrara los resultados mas recientes o los próximos encuentros que se disputan</p>
+	    <input type="number" name="num_liga" value=""/>
+	    <br/>
+	    <br>
+	      <input type='submit' value='Submit'/>
+	    </form>
+	  </form>
 	</div>
-      </div>
-  </body>
-</html>
+       </div>
+      </body>
+    </html>
