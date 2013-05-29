@@ -26,7 +26,7 @@
 	  <option value="89">serie B</option>
 	  <option value="90">3º Italiana</option>
 	  <option value="91">4ºItaliana</option>
-	  <option value="16">lliga Francesa</option>
+	  <option value="16">liga Francesa</option>
 	  <option value="92">2º Francesa</option>
 	  <option value="103">3º Francesa</option>
 	  <option value="8">bundesliga</option>
